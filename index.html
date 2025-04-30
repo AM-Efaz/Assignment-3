@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link href="./output.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=LXGW+WenKai+Mono+TC&family=Poiret+One&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+        @theme {
+          --color-clifford: rgb(23, 152, 0);
+        }
+
+        .sora-font {
+          font-family: "Sora", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 500;
+          font-style: normal;
+        }
+    </style>
+
+</head>
+<body class="sora-font">
+    <header style="border-bottom: 1px solid black;">
+        <nav class="navbar shadow-sm">
+          <div class="navbar-start">
+            <a class="btn btn-ghost text-xl lg:ml-30"><img src="logo-header.png" class="h-full" alt=""></a>
+          </div>
+
+          <div class="navbar-center hidden lg:flex lg:mr-4">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="hover:bg-gray-300 text-xl">Product</a></li>
+              <li><a class="hover:bg-gray-300 text-xl">Services</a></li>
+              <li><a class="hover:bg-gray-300 text-xl">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="navbar-end">
+            <a class="btn text-xl border-green-600 rounded-md hover:bg-green-200 font-medium mr-2 lg:flex max-lg:hidden">Login</a>
+            <a class="btn bg-green-600 text-white text-xl rounded-md hover:bg-gray-500 font-medium lg:mr-40 lg:flex max-lg:hidden">Register</a>
+          </div>
+
+          <div class="dropdown float-right border-1 border-green-600 w-3/5 lg:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden float-right">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-12 w-52 p-2 shadow">
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+        
+        </nav>
+    </header>
+
+
+<div class="lg:w-7/10 border-green-600 border-1 lg:ml-[15%]">
+  <h1 class="md:text-5xl text-3xl sora-font font-semibold text-center">Freshness <span class="text-green-600">You Can<br>Count</span> On, Prices You'll Love!</h1>
+  <p class="text-center lg:text-xl max-md:text-sm text-gray-600">Shop your daily essentials at unbeatable prices. From fresh produce to pantry<br>staples, we've got you covered every day!</p>
+  <img src="hero-vegetables.png" class="w-full" alt="">
+</div>
+
+<h1 class="text-green-600 text-4xl lg:ml-30 mb-10 mt-30">Services</h1>
+</body>
+</html>
