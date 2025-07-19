@@ -9,6 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <script src="tailwind.config.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +18,23 @@
   <style type="text/tailwindcss">
       @theme {
         --color-clifford: #da373d;
+        --color-green-header: rgb(23, 152, 0);
+        --bg-linear-white: rgb(239, 235, 227);
+        --animate-fade: an-f 1.5s ease-in-out forwards;
+        --hero-lg-ml: calc(50% - 515px);
+        --lg-width: 1320px;
+        --lg-ml: calc(50% - 660px);
+        --services-redius: 16px;
+        --three-seven-o-break: 370px;
+
+        @keyframes an-f {
+          0%{
+            opacity: 0%;
+          }
+          100%{
+            opacity: 100%;
+          }
+        }
       }
 
       .sora-font {
@@ -29,8 +47,22 @@
 </head>
 <body class="sora-font">
 
-  <div class="navbar bg-base-100 shadow-sm lg:h-[109px]">
+  <div class="navbar shadow-sm bg-base-100 max-lg:h-[70px] lg:h-[109px] max-lg:border-b-1 border-(--color-green-header)">
   <div class="navbar-start">
+    <a><img src="logo-header.png" alt="" class="h-[43px] lg:h-[60px]"></a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 text-xl">
+      <li><a>Product</a></li>
+      <li><a>Services</a></li>
+      <li><a>Contact us</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a href="" class="max-lg:hidden"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[24px] w-[24px] mr-[15px]"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></a>
+    <a href="" class="max-lg:hidden"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)" class="w-[24px] h-[24px] mr-[15px]"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></a>
+    <a class="btn mr-3 border-1 border-(--color-green-header) rounded-md max-lg:hidden font-normal text-xl">Login</a>
+    <a class="btn bg-(--color-green-header) text-white rounded-md font-normal max-lg:hidden text-xl">Register</a>
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
@@ -43,21 +75,60 @@
         <li><a>Contact us</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost text-xl"><img src="logo-header.png" alt="" class="w-[154px]"></a>
-  </div>
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1 text-xl">
-      <li><a>Product</a></li>
-      <li><a>Services</a></li>
-      <li><a>Contact us</a></li>
-    </ul>
-  </div>
-  <div class="navbar-end">
-    <a class="btn mr-3">Button</a>
-    <a class="btn">Button</a>
   </div>
 </div>
 
+
+<h1 class="text-center lg:text-5xl max-lg:text-4xl max-sm:text-3xl ml-[5vw] mr-[5vw] mt-[5vw] animate-fade">Freshness <span class="text-(--color-green-header)">You Can<br>Count</span> On, Prices You'll Love!</h1>
+
+<div class="w-full bg-linear-to-b from-white to-(--bg-linear-white) mb-[100px]">
+  <img src="hero-vegetables.png" alt="" class="xl:w-[1030px] xl:ml-(--hero-lg-ml) max-xl:w-[90vw] max-xl:ml-[5vw]">
+</div>
+
+
+<h1 class="text-(--color-green-header) text-4xl ml-(--lg-ml) mb-[30px] max-[1400px]:ml-[5%]">Services</h1>
+
+<div class="w-(--lg-width) border-1 ml-(--lg-ml) h-[367px] mb-[100px] grid grid-cols-3 grid-rows-1 gap-[24px] max-[1400px]:w-[90%] max-[1400px]:h-[25.02vw] max-[1400px]:ml-[5%] max-[1400px]:gap-[1.81%] max-[1150px]:h-[78.234vw] max-[1150px]:grid-cols-2 max-[1150px]:grid-rows-2 max-[1150px]:gap-[2.75%] max-sm:h-[243.89vw] max-sm:grid-cols-1 max-sm:grid-rows-3 max-sm:gap-[2.09%]">
+
+<div class="bg-(--bg-linear-white) rounded-(--services-redius)">
+
+  <div class="bg-white w-[35.437%] h-[41.1%] pt-[5.896%] rounded-full ml-[32.28%] mt-[8%] max-md:mt-[5%]"><img src="service.png" alt="" class="w-[66.67%] ml-[16.665%]"></div>
+  <h1 class="text-center text-2xl mt-[5%] max-md:text-xl max-md:mt-[3%] max-sm:mt-[5%] max-sm:text-2xl">24/7 Services</h1>
+  <p class="ml-[5%] mr-[5%] text-center text-xl font-light text-zinc-600 mt-[2.5%] max-md:text-lg max-md:mt-[1.5%] max-sm:text-base">24/7, stays open all the time. You can order any time you want.</p>
+
+</div>
+
+<div class="bg-(--bg-linear-white) rounded-(--services-redius)">
+
+  <div class="bg-white w-[35.437%] h-[41.1%] pt-[5.896%] rounded-full ml-[32.28%] mt-[8%] max-md:mt-[5%]"><img src="delivery.png" alt="" class="w-[66.67%] ml-[16.665%]"></div>
+  <h1 class="text-center text-2xl mt-[5%] max-md:text-xl max-md:mt-[3%] max-sm:mt-[5%] max-sm:text-2xl">Fast Delivery</h1>
+  <p class="ml-[5%] mr-[5%] text-center text-xl font-light text-zinc-600 mt-[2.5%] max-md:text-lg max-md:mt-[1.5%] max-sm:text-base">We deliver products faster so, you don't have to wait for long time.</p>
+
+</div>
+
+<div class="bg-(--bg-linear-white) rounded-(--services-redius)">
+
+  <div class="bg-white w-[35.437%] h-[41.1%] pt-[5.896%] rounded-full ml-[32.28%] mt-[8%] max-md:mt-[5%]"><img src="healthy.png" alt="" class="w-[66.67%] ml-[16.665%]"></div>
+  <h1 class="text-center text-2xl mt-[5%] max-md:text-xl max-md:mt-[3%] max-sm:mt-[5%] max-sm:text-2xl">Healthy Products</h1>
+  <p class="ml-[5%] mr-[5%] text-center text-xl font-light text-zinc-600 mt-[2.5%] max-md:text-lg max-md:mt-[1.5%] max-sm:text-base">We provide healthy and quality food. Also we maintain strict hygiene.</p>
+
+</div>
+
+</div>
+
+
+<div class="bg-(--bg-linear-white) mt-[100px] pt-[100px] w-[100%] h-[30vw]">
+
+  <h1 class="text-(--color-green-header) min-[1400px]:ml-(--lg-ml) text-4xl max-[1400px]:ml-[5%]">Popular Products</h1>
+
+  <div class="min-[1400px]:w-(--lg-width) min-[1400px]:h-[402px] min-[1400px]:ml-(--lg-ml) border-1">
+    
+    <div></div>
+
+    <div></div>
+  </div>
+
+</div>
 
 </body>
 </html>
