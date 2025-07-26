@@ -14,6 +14,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=LXGW+WenKai+Mono+TC&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=LXGW+WenKai+Mono+TC&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
   <style type="text/tailwindcss">
       @theme {
@@ -26,6 +29,7 @@
         --lg-ml: calc(50% - 660px);
         --services-redius: 16px;
         --three-seven-o-break: 370px;
+        --pp-linear-green: rgb(83, 219, 58);
 
         @keyframes an-f {
           0%{
@@ -43,11 +47,18 @@
         font-weight: 500;
         font-style: normal;
 }
+
+.adlam-display-regular {
+  font-family: "ADLaM Display", system-ui;
+  font-weight: 100;
+  font-style: normal;
+}
+
     </style>
 </head>
 <body class="sora-font">
 
-  <div class="navbar shadow-sm bg-base-100 max-lg:h-[70px] lg:h-[109px] max-lg:border-b-1 border-(--color-green-header)">
+  <div class="navbar bg-base-100 max-lg:h-[70px] lg:h-[109px] max-lg:border-b-1 border-(--color-green-header)">
   <div class="navbar-start">
     <a><img src="logo-header.png" alt="" class="h-[43px] lg:h-[60px]"></a>
   </div>
@@ -86,9 +97,9 @@
 </div>
 
 
-<h1 class="text-(--color-green-header) text-4xl ml-(--lg-ml) mb-[30px] max-[1400px]:ml-[5%]">Services</h1>
+<h1 class="text-(--color-green-header) text-4xl ml-(--lg-ml) mb-[30px] max-[1400px]:ml-[5%] font-semibold">Services</h1>
 
-<div class="w-(--lg-width) border-1 ml-(--lg-ml) h-[367px] mb-[100px] grid grid-cols-3 grid-rows-1 gap-[24px] max-[1400px]:w-[90%] max-[1400px]:h-[25.02vw] max-[1400px]:ml-[5%] max-[1400px]:gap-[1.81%] max-[1150px]:h-[78.234vw] max-[1150px]:grid-cols-2 max-[1150px]:grid-rows-2 max-[1150px]:gap-[2.75%] max-sm:h-[243.89vw] max-sm:grid-cols-1 max-sm:grid-rows-3 max-sm:gap-[2.09%]">
+<div class="w-(--lg-width) ml-(--lg-ml) h-[367px] mb-[100px] grid grid-cols-3 grid-rows-1 gap-[24px] max-[1400px]:w-[90%] max-[1400px]:h-[25.02vw] max-[1400px]:ml-[5%] max-[1400px]:gap-[1.81%] max-[1150px]:h-[78.234vw] max-[1150px]:grid-cols-2 max-[1150px]:grid-rows-2 max-[1150px]:gap-[2.75%] max-sm:h-[243.89vw] max-sm:grid-cols-1 max-sm:grid-rows-3 max-sm:gap-[2.09%]">
 
 <div class="bg-(--bg-linear-white) rounded-(--services-redius)">
 
@@ -117,15 +128,105 @@
 </div>
 
 
-<div class="bg-(--bg-linear-white) mt-[100px] pt-[100px] w-[100%] h-[30vw]">
+<div class="bg-(--bg-linear-white) mt-[100px] pt-[100px] w-[100%] min-[1400px]:h-[775px] max-[1400px]:h-[48.438vw] max-[1151px]:h-[72vw] mb-[100px] max-md:h-[255vw]">
 
-  <h1 class="text-(--color-green-header) min-[1400px]:ml-(--lg-ml) text-4xl max-[1400px]:ml-[5%]">Popular Products</h1>
+  <h1 class="text-(--color-green-header) min-[1400px]:ml-(--lg-ml) text-4xl max-[1400px]:ml-[5%] mb-[40px] font-semibold">Popular Products</h1>
 
-  <div class="min-[1400px]:w-(--lg-width) min-[1400px]:h-[402px] min-[1400px]:ml-(--lg-ml) border-1">
+  <div class="min-[1400px]:w-(--lg-width) min-[1400px]:h-[402px] min-[1400px]:ml-(--lg-ml) max-[1400px]:w-[90%] max-[1400px]:h-[27.409vw] max-[1400px]:ml-[5%] max-[1151px]:h-[43.7vw] max-md:h-[175.738vw]">
     
-    <div></div>
+    <div class="h-[100%] w-[32.12%] bg-gradient-to-br from-(--pp-linear-green) from-30% to-white to-100% rounded-[3%] float-left max-[1151px]:w-[47%] max-md:w-[100%] max-md:float-none max-md:h-[48%] max-md:mb-[8%]">
+      <div class="h-[100%] w-[100%] rounded-[2%] bg-[url(vegetable-offer.png)] bg-no-repeat bg-size-[63.915%] bg-bottom-right pt-[10%] pl-[6%]">
+        <h1 class="adlam-display-regular text-white text-3xl font-light max-[768px]:text-5xl max-[450px]:text-4xl max-[360px]:text-3xl">30% off</h1>
+        <h2 class="text-base text-neutral-600 font-normal mt-[5%] max-[768px]:text-xl max-[450px]:text-base max-[360px]:text-sm">Discover a world of treats, toys, and<br>essentials handpicked for</h2>
+        <button class="bg-white text-black w-[35.14%] h-[13.194%] rounded-[6px] mt-[5%] text-xl max-[450px]:text-base max-[450px]:rounded-[5px] max-[350px]:text-sm">Buy Now</button>
+      </div>
+    </div>
 
-    <div></div>
+    <div class="float-right h-[100%] w-[66.06%] grid grid-cols-3 grid-rows-3 gap-[23px] max-[1151px]:grid-cols-2 max-[1151px]:grid-rows-4 max-[1151px]:w-[51%] max-[1151px]:gap-[2.3%] max-md:w-[100%] max-md:float-none max-md:h-[48%]">
+
+      <div class="bg-white rounded-[10px] max-[450px]:rounded-[5px]">
+
+        <div class="w-[31.27%] h-[72.881%] bg-(--bg-linear-white) mt-[5.6%] ml-[5.6%] mr-[5.6%] max-[1151px]:mr-[3%] rounded-[10%] pt-[3%] float-left max-[450px]:ml-[3%]"><img src="tomato.png" alt="" width="81.395%" class="ml-[9.3%]"></div>
+        <h3 class="text-sm mt-[5.6%] max-[1340px]:text-xs max-[768px]:text-sm max-[560px]:text-xs">4.5</h3>
+        <h1 class="text-xl max-[1340px]:text-base max-[960px]:text-sm max-[768px]:text-xl max-[560px]:text-base max-[450px]:text-sm max-[368px]:text-xs max-[368px]:font-semibold">Tomato 500 g</h1>
+        <h2 class="text-base max-[1340px]:text-sm max-[960px]:text-xs max-[768px]:text-base max-[560px]:text-sm max-[450px]:text-xs">$39.99</h2>
+
+      </div>
+
+      <div class="bg-white rounded-[10px] max-[450px]:rounded-[5px]">
+
+        <div class="w-[31.27%] h-[72.881%] bg-(--bg-linear-white) mt-[5.6%] ml-[5.6%] mr-[5.6%] max-[1151px]:mr-[3%] rounded-[10%] pt-[3%] float-left max-[450px]:ml-[3%]"><img src="tomato.png" alt="" width="81.395%" class="ml-[9.3%]"></div>
+        <h3 class="text-sm mt-[5.6%] max-[1340px]:text-xs max-[768px]:text-sm max-[560px]:text-xs">4.5</h3>
+        <h1 class="text-xl max-[1340px]:text-base max-[960px]:text-sm max-[768px]:text-xl max-[560px]:text-base max-[450px]:text-sm max-[368px]:text-xs max-[368px]:font-semibold">Tomato 500 g</h1>
+        <h2 class="text-base max-[1340px]:text-sm max-[960px]:text-xs max-[768px]:text-base max-[560px]:text-sm max-[450px]:text-xs">$39.99</h2>
+
+      </div>
+
+      <div class="bg-white rounded-[10px] max-[450px]:rounded-[5px]">
+
+        <div class="w-[31.27%] h-[72.881%] bg-(--bg-linear-white) mt-[5.6%] ml-[5.6%] mr-[5.6%] max-[1151px]:mr-[3%] rounded-[10%] pt-[3%] float-left max-[450px]:ml-[3%]"><img src="tomato.png" alt="" width="81.395%" class="ml-[9.3%]"></div>
+        <h3 class="text-sm mt-[5.6%] max-[1340px]:text-xs max-[768px]:text-sm max-[560px]:text-xs">4.5</h3>
+        <h1 class="text-xl max-[1340px]:text-base max-[960px]:text-sm max-[768px]:text-xl max-[560px]:text-base max-[450px]:text-sm max-[368px]:text-xs max-[368px]:font-semibold">Tomato 500 g</h1>
+        <h2 class="text-base max-[1340px]:text-sm max-[960px]:text-xs max-[768px]:text-base max-[560px]:text-sm max-[450px]:text-xs">$39.99</h2>
+
+      </div>
+
+      <div class="bg-white rounded-[10px] max-[450px]:rounded-[5px]">
+
+        <div class="w-[31.27%] h-[72.881%] bg-(--bg-linear-white) mt-[5.6%] ml-[5.6%] mr-[5.6%] max-[1151px]:mr-[3%] rounded-[10%] pt-[3%] float-left max-[450px]:ml-[3%]"><img src="tomato.png" alt="" width="81.395%" class="ml-[9.3%]"></div>
+        <h3 class="text-sm mt-[5.6%] max-[1340px]:text-xs max-[768px]:text-sm max-[560px]:text-xs">4.5</h3>
+        <h1 class="text-xl max-[1340px]:text-base max-[960px]:text-sm max-[768px]:text-xl max-[560px]:text-base max-[450px]:text-sm max-[368px]:text-xs max-[368px]:font-semibold">Tomato 500 g</h1>
+        <h2 class="text-base max-[1340px]:text-sm max-[960px]:text-xs max-[768px]:text-base max-[560px]:text-sm max-[450px]:text-xs">$39.99</h2>
+
+      </div>
+
+      <div class="bg-white rounded-[10px] max-[450px]:rounded-[5px]">
+
+        <div class="w-[31.27%] h-[72.881%] bg-(--bg-linear-white) mt-[5.6%] ml-[5.6%] mr-[5.6%] max-[1151px]:mr-[3%] rounded-[10%] pt-[3%] float-left max-[450px]:ml-[3%]"><img src="tomato.png" alt="" width="81.395%" class="ml-[9.3%]"></div>
+        <h3 class="text-sm mt-[5.6%] max-[1340px]:text-xs max-[768px]:text-sm max-[560px]:text-xs">4.5</h3>
+        <h1 class="text-xl max-[1340px]:text-base max-[960px]:text-sm max-[768px]:text-xl max-[560px]:text-base max-[450px]:text-sm max-[368px]:text-xs max-[368px]:font-semibold">Tomato 500 g</h1>
+        <h2 class="text-base max-[1340px]:text-sm max-[960px]:text-xs max-[768px]:text-base max-[560px]:text-sm max-[450px]:text-xs">$39.99</h2>
+
+      </div>
+
+      <div class="bg-white rounded-[10px] max-[450px]:rounded-[5px]">
+
+        <div class="w-[31.27%] h-[72.881%] bg-(--bg-linear-white) mt-[5.6%] ml-[5.6%] mr-[5.6%] max-[1151px]:mr-[3%] rounded-[10%] pt-[3%] float-left max-[450px]:ml-[3%]"><img src="tomato.png" alt="" width="81.395%" class="ml-[9.3%]"></div>
+        <h3 class="text-sm mt-[5.6%] max-[1340px]:text-xs max-[768px]:text-sm max-[560px]:text-xs">4.5</h3>
+        <h1 class="text-xl max-[1340px]:text-base max-[960px]:text-sm max-[768px]:text-xl max-[560px]:text-base max-[450px]:text-sm max-[368px]:text-xs max-[368px]:font-semibold">Tomato 500 g</h1>
+        <h2 class="text-base max-[1340px]:text-sm max-[960px]:text-xs max-[768px]:text-base max-[560px]:text-sm max-[450px]:text-xs">$39.99</h2>
+
+      </div>
+
+      <div class="bg-white rounded-[10px] max-[450px]:rounded-[5px]">
+
+        <div class="w-[31.27%] h-[72.881%] bg-(--bg-linear-white) mt-[5.6%] ml-[5.6%] mr-[5.6%] max-[1151px]:mr-[3%] rounded-[10%] pt-[3%] float-left max-[450px]:ml-[3%]"><img src="tomato.png" alt="" width="81.395%" class="ml-[9.3%]"></div>
+        <h3 class="text-sm mt-[5.6%] max-[1340px]:text-xs max-[768px]:text-sm max-[560px]:text-xs">4.5</h3>
+        <h1 class="text-xl max-[1340px]:text-base max-[960px]:text-sm max-[768px]:text-xl max-[560px]:text-base max-[450px]:text-sm max-[368px]:text-xs max-[368px]:font-semibold">Tomato 500 g</h1>
+        <h2 class="text-base max-[1340px]:text-sm max-[960px]:text-xs max-[768px]:text-base max-[560px]:text-sm max-[450px]:text-xs">$39.99</h2>
+
+      </div>
+
+      <div class="bg-white rounded-[10px] max-[450px]:rounded-[5px]">
+
+        <div class="w-[31.27%] h-[72.881%] bg-(--bg-linear-white) mt-[5.6%] ml-[5.6%] mr-[5.6%] max-[1151px]:mr-[3%] rounded-[10%] pt-[3%] float-left max-[450px]:ml-[3%]"><img src="tomato.png" alt="" width="81.395%" class="ml-[9.3%]"></div>
+        <h3 class="text-sm mt-[5.6%] max-[1340px]:text-xs max-[768px]:text-sm max-[560px]:text-xs">4.5</h3>
+        <h1 class="text-xl max-[1340px]:text-base max-[960px]:text-sm max-[768px]:text-xl max-[560px]:text-base max-[450px]:text-sm max-[368px]:text-xs max-[368px]:font-semibold">Tomato 500 g</h1>
+        <h2 class="text-base max-[1340px]:text-sm max-[960px]:text-xs max-[768px]:text-base max-[560px]:text-sm max-[450px]:text-xs">$39.99</h2>
+
+      </div>
+
+      <div class="bg-white rounded-[10px] max-[450px]:rounded-[5px]">
+        
+        <div class="w-[31.27%] h-[72.881%] bg-(--bg-linear-white) mt-[5.6%] ml-[5.6%] mr-[5.6%] rounded-[10%] pt-[3%] float-left max-[1152px]:hidden"><img src="potato.png" alt="" width="81.395%" class="ml-[9.3%]"></div>
+        <h3 class="text-sm mt-[5.6%] max-[1340px]:text-xs max-[1152px]:hidden">4.5</h3>
+        <h1 class="text-xl max-[1340px]:text-base max-[1152px]:hidden">Potato 1 KG</h1>
+        <h2 class="text-base max-[1340px]:text-sm max-[1152px]:hidden">$39.99</h2>
+
+      </div>
+
+    </div>
+
   </div>
 
 </div>
