@@ -17,19 +17,26 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=LXGW+WenKai+Mono+TC&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  
 
   <style type="text/tailwindcss">
       @theme {
         --color-clifford: #da373d;
         --color-green-header: rgb(23, 152, 0);
         --bg-linear-white: rgb(239, 235, 227);
-        --animate-fade: an-f 1.5s ease-in-out forwards;
+        --animate-fade: an-f 1.5s ease-in-out .5s forwards;
         --hero-lg-ml: calc(50% - 515px);
         --lg-width: 1320px;
         --lg-ml: calc(50% - 660px);
         --services-redius: 16px;
         --three-seven-o-break: 370px;
         --pp-linear-green: rgb(83, 219, 58);
+        --dawat-green: rgb(17, 84, 20);
+        --dawat-blue: rgb(16, 40, 97);
+        --dawat-green-button: rgb(99, 183, 109);
+        --dawat-blue-button: rgb(42, 77, 151);
+        --grocery-md-pt: calc(15.58vw + 72px);
+        --grocery-sm-pt: calc(58.701vw + 72px);
 
         @keyframes an-f {
           0%{
@@ -46,17 +53,24 @@
         font-optical-sizing: auto;
         font-weight: 500;
         font-style: normal;
-}
+      }
 
-.adlam-display-regular {
-  font-family: "ADLaM Display", system-ui;
-  font-weight: 100;
-  font-style: normal;
-}
+      .adlam-display-regular {
+        font-family: "ADLaM Display", system-ui;
+        font-weight: 100;
+        font-style: normal;
+      }
+
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
 
     </style>
 </head>
 <body class="sora-font">
+
 
   <div class="navbar bg-base-100 max-lg:h-[70px] lg:h-[109px] max-lg:border-b-1 border-(--color-green-header)">
   <div class="navbar-start">
@@ -97,14 +111,14 @@
 </div>
 
 
-<h1 class="text-(--color-green-header) text-4xl ml-(--lg-ml) mb-[30px] max-[1400px]:ml-[5%] font-semibold">Services</h1>
+<h1 class="text-(--color-green-header) text-4xl ml-(--lg-ml) mb-[30px] max-[1400px]:ml-[5%] font-semibold max-[768px]:text-3xl max-[360px]:text-2xl">Services</h1>
 
 <div class="w-(--lg-width) ml-(--lg-ml) h-[367px] mb-[100px] grid grid-cols-3 grid-rows-1 gap-[24px] max-[1400px]:w-[90%] max-[1400px]:h-[25.02vw] max-[1400px]:ml-[5%] max-[1400px]:gap-[1.81%] max-[1150px]:h-[78.234vw] max-[1150px]:grid-cols-2 max-[1150px]:grid-rows-2 max-[1150px]:gap-[2.75%] max-sm:h-[243.89vw] max-sm:grid-cols-1 max-sm:grid-rows-3 max-sm:gap-[2.09%]">
 
 <div class="bg-(--bg-linear-white) rounded-(--services-redius)">
 
   <div class="bg-white w-[35.437%] h-[41.1%] pt-[5.896%] rounded-full ml-[32.28%] mt-[8%] max-md:mt-[5%]"><img src="service.png" alt="" class="w-[66.67%] ml-[16.665%]"></div>
-  <h1 class="text-center text-2xl mt-[5%] max-md:text-xl max-md:mt-[3%] max-sm:mt-[5%] max-sm:text-2xl">24/7 Services</h1>
+  <h1 class="text-center text-2xl mt-[5%] max-[768px]:text-xl max-md:mt-[3%] max-sm:mt-[5%] max-[640px]:text-3xl max-[470px]:text-2xl max-[400px]:text-xl">24/7 Services</h1>
   <p class="ml-[5%] mr-[5%] text-center text-xl font-light text-zinc-600 mt-[2.5%] max-md:text-lg max-md:mt-[1.5%] max-sm:text-base">24/7, stays open all the time. You can order any time you want.</p>
 
 </div>
@@ -112,7 +126,7 @@
 <div class="bg-(--bg-linear-white) rounded-(--services-redius)">
 
   <div class="bg-white w-[35.437%] h-[41.1%] pt-[5.896%] rounded-full ml-[32.28%] mt-[8%] max-md:mt-[5%]"><img src="delivery.png" alt="" class="w-[66.67%] ml-[16.665%]"></div>
-  <h1 class="text-center text-2xl mt-[5%] max-md:text-xl max-md:mt-[3%] max-sm:mt-[5%] max-sm:text-2xl">Fast Delivery</h1>
+  <h1 class="text-center text-2xl mt-[5%] max-[768px]:text-xl max-md:mt-[3%] max-sm:mt-[5%] max-[640px]:text-3xl max-[470px]:text-2xl max-[400px]:text-xl">Fast Delivery</h1>
   <p class="ml-[5%] mr-[5%] text-center text-xl font-light text-zinc-600 mt-[2.5%] max-md:text-lg max-md:mt-[1.5%] max-sm:text-base">We deliver products faster so, you don't have to wait for long time.</p>
 
 </div>
@@ -120,7 +134,7 @@
 <div class="bg-(--bg-linear-white) rounded-(--services-redius)">
 
   <div class="bg-white w-[35.437%] h-[41.1%] pt-[5.896%] rounded-full ml-[32.28%] mt-[8%] max-md:mt-[5%]"><img src="healthy.png" alt="" class="w-[66.67%] ml-[16.665%]"></div>
-  <h1 class="text-center text-2xl mt-[5%] max-md:text-xl max-md:mt-[3%] max-sm:mt-[5%] max-sm:text-2xl">Healthy Products</h1>
+  <h1 class="text-center text-2xl mt-[5%] max-[768px]:text-xl max-md:mt-[3%] max-sm:mt-[5%] max-[640px]:text-3xl max-[470px]:text-2xl max-[400px]:text-xl">Healthy Products</h1>
   <p class="ml-[5%] mr-[5%] text-center text-xl font-light text-zinc-600 mt-[2.5%] max-md:text-lg max-md:mt-[1.5%] max-sm:text-base">We provide healthy and quality food. Also we maintain strict hygiene.</p>
 
 </div>
@@ -130,13 +144,13 @@
 
 <div class="bg-(--bg-linear-white) mt-[100px] pt-[100px] w-[100%] min-[1400px]:h-[775px] max-[1400px]:h-[48.438vw] max-[1151px]:h-[72vw] mb-[100px] max-md:h-[255vw]">
 
-  <h1 class="text-(--color-green-header) min-[1400px]:ml-(--lg-ml) text-4xl max-[1400px]:ml-[5%] mb-[40px] font-semibold">Popular Products</h1>
+  <h1 class="text-(--color-green-header) min-[1400px]:ml-(--lg-ml) text-4xl max-[1400px]:ml-[5%] mb-[40px] font-semibold max-[768px]:text-3xl max-[390px]:text-2xl">Popular Products</h1>
 
   <div class="min-[1400px]:w-(--lg-width) min-[1400px]:h-[402px] min-[1400px]:ml-(--lg-ml) max-[1400px]:w-[90%] max-[1400px]:h-[27.409vw] max-[1400px]:ml-[5%] max-[1151px]:h-[43.7vw] max-md:h-[175.738vw]">
     
     <div class="h-[100%] w-[32.12%] bg-gradient-to-br from-(--pp-linear-green) from-30% to-white to-100% rounded-[3%] float-left max-[1151px]:w-[47%] max-md:w-[100%] max-md:float-none max-md:h-[48%] max-md:mb-[8%]">
       <div class="h-[100%] w-[100%] rounded-[2%] bg-[url(vegetable-offer.png)] bg-no-repeat bg-size-[63.915%] bg-bottom-right pt-[10%] pl-[6%]">
-        <h1 class="adlam-display-regular text-white text-3xl font-light max-[768px]:text-5xl max-[450px]:text-4xl max-[360px]:text-3xl">30% off</h1>
+        <h1 class="adlam-display-regular text-white text-3xl font-light max-[768px]:text-5xl max-[450px]:text-4xl max-[360px]:text-2xl">30% off</h1>
         <h2 class="text-base text-neutral-600 font-normal mt-[5%] max-[768px]:text-xl max-[450px]:text-base max-[360px]:text-sm">Discover a world of treats, toys, and<br>essentials handpicked for</h2>
         <button class="bg-white text-black w-[35.14%] h-[13.194%] rounded-[6px] mt-[5%] text-xl max-[450px]:text-base max-[450px]:rounded-[5px] max-[350px]:text-sm">Buy Now</button>
       </div>
@@ -146,9 +160,9 @@
 
       <div class="bg-white rounded-[10px] max-[450px]:rounded-[5px]">
 
-        <div class="w-[31.27%] h-[72.881%] bg-(--bg-linear-white) mt-[5.6%] ml-[5.6%] mr-[5.6%] max-[1151px]:mr-[3%] rounded-[10%] pt-[3%] float-left max-[450px]:ml-[3%]"><img src="tomato.png" alt="" width="81.395%" class="ml-[9.3%]"></div>
+        <div class="w-[31.27%] h-[72.881%] bg-(--bg-linear-white) mt-[5.6%] ml-[5.6%] mr-[5.6%] max-[1151px]:mr-[3%] rounded-[10%] pt-[3%] float-left max-[450px]:ml-[3%]"><img src="onion.png" alt="" width="81.395%" class="ml-[9.3%]"></div>
         <h3 class="text-sm mt-[5.6%] max-[1340px]:text-xs max-[768px]:text-sm max-[560px]:text-xs">4.5</h3>
-        <h1 class="text-xl max-[1340px]:text-base max-[960px]:text-sm max-[768px]:text-xl max-[560px]:text-base max-[450px]:text-sm max-[368px]:text-xs max-[368px]:font-semibold">Tomato 500 g</h1>
+        <h1 class="text-xl max-[1340px]:text-base max-[960px]:text-sm max-[768px]:text-xl max-[560px]:text-base max-[450px]:text-sm max-[368px]:text-xs max-[368px]:font-semibold">Onion 1 KG</h1>
         <h2 class="text-base max-[1340px]:text-sm max-[960px]:text-xs max-[768px]:text-base max-[560px]:text-sm max-[450px]:text-xs">$39.99</h2>
 
       </div>
@@ -164,9 +178,9 @@
 
       <div class="bg-white rounded-[10px] max-[450px]:rounded-[5px]">
 
-        <div class="w-[31.27%] h-[72.881%] bg-(--bg-linear-white) mt-[5.6%] ml-[5.6%] mr-[5.6%] max-[1151px]:mr-[3%] rounded-[10%] pt-[3%] float-left max-[450px]:ml-[3%]"><img src="tomato.png" alt="" width="81.395%" class="ml-[9.3%]"></div>
+        <div class="w-[31.27%] h-[72.881%] bg-(--bg-linear-white) mt-[5.6%] ml-[5.6%] mr-[5.6%] max-[1151px]:mr-[3%] rounded-[10%] pt-[3%] float-left max-[450px]:ml-[3%]"><img src="potato.png" alt="" width="81.395%" class="ml-[9.3%]"></div>
         <h3 class="text-sm mt-[5.6%] max-[1340px]:text-xs max-[768px]:text-sm max-[560px]:text-xs">4.5</h3>
-        <h1 class="text-xl max-[1340px]:text-base max-[960px]:text-sm max-[768px]:text-xl max-[560px]:text-base max-[450px]:text-sm max-[368px]:text-xs max-[368px]:font-semibold">Tomato 500 g</h1>
+        <h1 class="text-xl max-[1340px]:text-base max-[960px]:text-sm max-[768px]:text-xl max-[560px]:text-base max-[450px]:text-sm max-[368px]:text-xs max-[368px]:font-semibold">Potato 1 KG</h1>
         <h2 class="text-base max-[1340px]:text-sm max-[960px]:text-xs max-[768px]:text-base max-[560px]:text-sm max-[450px]:text-xs">$39.99</h2>
 
       </div>
@@ -182,9 +196,9 @@
 
       <div class="bg-white rounded-[10px] max-[450px]:rounded-[5px]">
 
-        <div class="w-[31.27%] h-[72.881%] bg-(--bg-linear-white) mt-[5.6%] ml-[5.6%] mr-[5.6%] max-[1151px]:mr-[3%] rounded-[10%] pt-[3%] float-left max-[450px]:ml-[3%]"><img src="tomato.png" alt="" width="81.395%" class="ml-[9.3%]"></div>
+        <div class="w-[31.27%] h-[72.881%] bg-(--bg-linear-white) mt-[5.6%] ml-[5.6%] mr-[5.6%] max-[1151px]:mr-[3%] rounded-[10%] pt-[3%] float-left max-[450px]:ml-[3%]"><img src="onion.png" alt="" width="81.395%" class="ml-[9.3%]"></div>
         <h3 class="text-sm mt-[5.6%] max-[1340px]:text-xs max-[768px]:text-sm max-[560px]:text-xs">4.5</h3>
-        <h1 class="text-xl max-[1340px]:text-base max-[960px]:text-sm max-[768px]:text-xl max-[560px]:text-base max-[450px]:text-sm max-[368px]:text-xs max-[368px]:font-semibold">Tomato 500 g</h1>
+        <h1 class="text-xl max-[1340px]:text-base max-[960px]:text-sm max-[768px]:text-xl max-[560px]:text-base max-[450px]:text-sm max-[368px]:text-xs max-[368px]:font-semibold">Onion 1 KG</h1>
         <h2 class="text-base max-[1340px]:text-sm max-[960px]:text-xs max-[768px]:text-base max-[560px]:text-sm max-[450px]:text-xs">$39.99</h2>
 
       </div>
@@ -200,18 +214,18 @@
 
       <div class="bg-white rounded-[10px] max-[450px]:rounded-[5px]">
 
-        <div class="w-[31.27%] h-[72.881%] bg-(--bg-linear-white) mt-[5.6%] ml-[5.6%] mr-[5.6%] max-[1151px]:mr-[3%] rounded-[10%] pt-[3%] float-left max-[450px]:ml-[3%]"><img src="tomato.png" alt="" width="81.395%" class="ml-[9.3%]"></div>
+        <div class="w-[31.27%] h-[72.881%] bg-(--bg-linear-white) mt-[5.6%] ml-[5.6%] mr-[5.6%] max-[1151px]:mr-[3%] rounded-[10%] pt-[3%] float-left max-[450px]:ml-[3%]"><img src="onion.png" alt="" width="81.395%" class="ml-[9.3%]"></div>
         <h3 class="text-sm mt-[5.6%] max-[1340px]:text-xs max-[768px]:text-sm max-[560px]:text-xs">4.5</h3>
-        <h1 class="text-xl max-[1340px]:text-base max-[960px]:text-sm max-[768px]:text-xl max-[560px]:text-base max-[450px]:text-sm max-[368px]:text-xs max-[368px]:font-semibold">Tomato 500 g</h1>
+        <h1 class="text-xl max-[1340px]:text-base max-[960px]:text-sm max-[768px]:text-xl max-[560px]:text-base max-[450px]:text-sm max-[368px]:text-xs max-[368px]:font-semibold">Onion 1 KG</h1>
         <h2 class="text-base max-[1340px]:text-sm max-[960px]:text-xs max-[768px]:text-base max-[560px]:text-sm max-[450px]:text-xs">$39.99</h2>
 
       </div>
 
       <div class="bg-white rounded-[10px] max-[450px]:rounded-[5px]">
 
-        <div class="w-[31.27%] h-[72.881%] bg-(--bg-linear-white) mt-[5.6%] ml-[5.6%] mr-[5.6%] max-[1151px]:mr-[3%] rounded-[10%] pt-[3%] float-left max-[450px]:ml-[3%]"><img src="tomato.png" alt="" width="81.395%" class="ml-[9.3%]"></div>
+        <div class="w-[31.27%] h-[72.881%] bg-(--bg-linear-white) mt-[5.6%] ml-[5.6%] mr-[5.6%] max-[1151px]:mr-[3%] rounded-[10%] pt-[3%] float-left max-[450px]:ml-[3%]"><img src="potato.png" alt="" width="81.395%" class="ml-[9.3%]"></div>
         <h3 class="text-sm mt-[5.6%] max-[1340px]:text-xs max-[768px]:text-sm max-[560px]:text-xs">4.5</h3>
-        <h1 class="text-xl max-[1340px]:text-base max-[960px]:text-sm max-[768px]:text-xl max-[560px]:text-base max-[450px]:text-sm max-[368px]:text-xs max-[368px]:font-semibold">Tomato 500 g</h1>
+        <h1 class="text-xl max-[1340px]:text-base max-[960px]:text-sm max-[768px]:text-xl max-[560px]:text-base max-[450px]:text-sm max-[368px]:text-xs max-[368px]:font-semibold">Potato 1 KG</h1>
         <h2 class="text-base max-[1340px]:text-sm max-[960px]:text-xs max-[768px]:text-base max-[560px]:text-sm max-[450px]:text-xs">$39.99</h2>
 
       </div>
@@ -230,6 +244,91 @@
   </div>
 
 </div>
+
+
+<h1 class="text-(--color-green-header) ml-(--lg-ml) text-4xl max-[1400px]:ml-[5%] mb-[40px] font-semibold max-[768px]:text-3xl max-[390px]:text-2xl">Arrival & Offers</h1>
+
+<div class="w-(--lg-width) h-[344px] ml-(--lg-ml) max-[1400px]:w-[90%] max-[1400px]:ml-[5%] max-[1400px]:h-[23.45vw] mb-[100px] max-[810px]:h-[99.553vw] max-[810px]:grid max-[810px]:grid-rows-2 max-[810px]:grid-cols-1 max-[810px]:gap-[4.469%]">
+
+  <div class="w-[59.09%] h-[100%] float-left bg-(--dawat-green) pl-[3.55%] pt-[2.9%] rounded-[24px] max-[1000px]:rounded-[14px] max-[810px]:rounded-[24px] max-[570px]:rounded-[14px] poppins-regular max-[810px]:float-none max-[810px]:w-[100%]">
+
+    <img src="dawat-mock-up.png" alt="" class="float-right min-[810px]:w-[47%] max-[810px]:w-[48%] max-[810px]:mt-[6%]">
+    <img src="dawat-logo.png" alt="" class="float-left mt-[2%] w-[31.538%]">
+    <button class="bg-(--dawat-green-button) text-white w-[43.974%] h-[18.895%] mt-[5%] rounded-[12px] text-2xl font-light max-[1150px]:text-lg max-[1150px]:rounded-[10px] max-[900px]:rounded-[7px] max-[810px]:rounded-[15px] max-[810px]:w-[49.441%] max-[810px]:text-2xl max-[660px]:rounded-[10px] max-[660px]:text-xl max-[470px]:rounded-[8px] max-[470px]:text-sm max-[380px]:rounded-[6px]">Cook Exotic Dishes</button>
+    <h1 class="text-white font-light text-4xl mt-[3.5%] float-left max-[1270px]:text-3xl max-[1000px]:text-2xl max-[810px]:text-5xl max-[810px]:mt-[8%] max-[760px]:text-4xl max-[565px]:text-3xl max-[470px]:text-2xl max-[380px]:text-xl">UP to <span class="font-bold">20% OFF</span></h1>
+
+  </div>
+
+  <div class="w-[39.39%] h-[100%] float-right bg-(--dawat-blue) rounded-[24px] max-[1000px]:rounded-[14px] max-[810px]:rounded-[24px] max-[570px]:rounded-[14px] pl-[2%] pr-[1%] text-white poppins-regular max-[810px]:float-none max-[810px]:w-[100%] max-[810px]:pl-[3.55%]">
+
+    <img src="india-gate-mock-up.png" alt="" class="float-right mt-[15%] w-[33.65%] max-[810px]:mt-[6%] max-[810px]:w-[28.5%]">
+    <img src="india-gate-logo.png" alt="" class="float-left mt-[4%] w-[19.038%] max-[810px]:mb-[-5%] max-[820px]:w-[15%] mr-[5%]">
+    <button class="float-left font-light bg-(--dawat-blue-button) w-[53.846%] h-[18.895%] rounded-[12px] mt-[7%] text-2xl max-[1270px]:text-xl max-[1025px]:text-lg max-[1000px]:rounded-[10px] max-[925px]:text-base max-[810px]:mb-[-3%] max-[810px]:rounded-[15px] max-[810px]:w-[45.53%] max-[810px]:h-[18%] max-[810px]:mr-[10%] max-[810px]:text-2xl max-[660px]:rounded-[10px] max-[660px]:text-xl max-[470px]:text-lg max-[470px]:rounded-[8px] max-[470px]:text-sm max-[380px]:rounded-[6px]">World's No.1 Rice</button>
+    <h1 class="font-light text-4xl float-left mt-[5%] max-[1270px]:text-3xl max-[1000px]:text-2xl max-[810px]:text-5xl max-[810px]:mt-[8%] max-[760px]:text-4xl max-[565px]:text-3xl max-[470px]:text-2xl max-[380px]:text-xl">Up to <span class="font-bold">40% OFF</span></h1>
+
+  </div>
+
+</div>
+
+
+<div class="bg-(--bg-linear-white) w-(--lg-width) ml-(--lg-ml) h-[457px] rounded-[24px] max-[1400px]:w-[90%] max-[1400px]:ml-[5%] max-[1400px]:h-[31.159vw] max-[640px]:h-[117.402vw] grid min-[640px]:grid-cols-2 min-[640px]:grid-rows-1 max-[640px]:grid-cols-1 max-[640px]:grid-rows-2 max-[1250px]:rounded-[20px] max-[860px]:rounded-[16px]">
+
+  <div>
+    
+    <img src="vegetable-busket.png" alt="" class="w-[66.9%] ml-[16.55%] mt-[8.2%]">
+  
+  </div>
+
+  <div class="pl-[2%] max-[640px]:pl-[0]">
+
+    <h1 class="text-4xl font-semibold mt-[14%] mb-[4%] max-[1300px]:text-3xl max-[1000px]:mt-[8%] max-[1000px]:text-2xl max-[740px]:text-xl max-[640px]:text-center max-[640px]:text-(--color-green-header) max-[640px]:text-3xl max-[640px]:mt-[2.5%] max-[483px]:text-2xl max-[382px]:text-xl">Get Grocery News!</h1>
+    <h2 class="text-xl font-normal mb-[5%] max-[1300px]:text-lg max-[1150px]:text-base mr-[10px] max-[740px]:text-sm max-[640px]:text-center max-[640px]:text-xl max-[640px]:ml-[6.425%] max-[640px]:mr-[6.425%] max-[640px]:mb-[3%] max-[483px]:text-base max-[382px]:text-sm max-[334px]:text-xs">Exclusive training tips, ticks, product deals and more.</h2>
+    <input type="email" placeholder="Enter email...." class="w-[71.52%] h-[14.66%] bg-white pl-[3%] border-0 rounded-[8px] outline-0 text-base max-[1110px]:rounded-[6px] max-[790px]:rounded-[4px] max-[790px]:text-sm max-[640px]:w-[87.15%] max-[640px]:h-[17.987%] max-[640px]:ml-[6.425%] max-[640px]:rounded-[10px] max-[420px]:rounded-[6px]"><br>
+    <button class="bg-(--color-green-header) text-white outline-0 border-0 w-[24.85%] h-[9.847%] rounded-[8px] mt-[6%] text-xl font-light max-[1110px]:text-base max-[1110px]:rounded-[6px] max-[860px]:text-sm max-[790px]:text-xs max-[790px]:rounded-[4px] max-[640px]:w-[33.799%] max-[640px]:h-[14.561%] max-[640px]:ml-[33.1005%] max-[640px]:rounded-[10px] max-[640px]:mt-[2%] max-[640px]:text-xl max-[420px]:text-base max-[420px]:rounded-[6px] max-[340px]:text-sm">Subscribe</button>
+
+  </div>
+
+</div>
+
+
+<footer class="footer sm:footer-horizontal bg-(--color-green-header) text-base-content pl-(--lg-ml) pr-(--lg-ml) pt-[300px] max-[1400px]:pt-(--grocery-md-pt) max-[640px]:pt-(--grocery-sm-pt) pb-[100px] max-[1400px]:p-[5vw] text-white sora-font relative mt-[-228px] max-[1400px]:mt-[-15.58vw] max-[640px]:mt-[-58.701vw] z-[-1]">
+  <nav class="w-[426px] max-[1060px]:w-[33vw] max-[766px]:w-[40vw] max-[640px]:w-[100%]">
+    <a href="index.html"><img src="logo-footer.png" alt="Image not found" class="w-[154px] max-[400px]:w-[100px]"/></a>
+    <h1 class="text-xl text-white opacity-70 max-[1060px]:text-base font-light">Discover a world of treats, toys, and essentials handpicked for your furry friends</h1>
+
+  </nav>
+  <nav class="font-light">
+    <a class="link link-hover">Product</a>
+    <a class="link link-hover">Services</a>
+    <a class="link link-hover">Contact us</a>
+  </nav>
+  <nav>
+    <h6 class="">Follow Us</h6>
+    <div class="grid grid-flow-col gap-4">
+      <a>
+        <svg fill="#ffffff" width="24px" height="24px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>facebook</title> <path d="M30.996 16.091c-0.001-8.281-6.714-14.994-14.996-14.994s-14.996 6.714-14.996 14.996c0 7.455 5.44 13.639 12.566 14.8l0.086 0.012v-10.478h-3.808v-4.336h3.808v-3.302c-0.019-0.167-0.029-0.361-0.029-0.557 0-2.923 2.37-5.293 5.293-5.293 0.141 0 0.281 0.006 0.42 0.016l-0.018-0.001c1.199 0.017 2.359 0.123 3.491 0.312l-0.134-0.019v3.69h-1.892c-0.086-0.012-0.185-0.019-0.285-0.019-1.197 0-2.168 0.97-2.168 2.168 0 0.068 0.003 0.135 0.009 0.202l-0.001-0.009v2.812h4.159l-0.665 4.336h-3.494v10.478c7.213-1.174 12.653-7.359 12.654-14.814v-0z"></path> </g></svg>
+      </a>
+      <a>
+        <svg fill="#ffffff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 169.063 169.063" xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752 c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407 c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752 c17.455,0,31.656,14.201,31.656,31.655V122.407z"></path> <path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561 C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561 c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z"></path> <path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78 c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78 C135.661,29.421,132.821,28.251,129.921,28.251z"></path> </g> </g></svg>
+      </a>
+      <a>
+        <svg fill="#ffffff" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M41.4,508.1H-8.5V348.4h49.9 V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7c18.4,0,29.7,11.9,30.1,27.7 C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4c-14.9,0-23.2,10-27,19.6 c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6c35.5,0,63.3,23,63.3,72.4V508.1z "></path> </g></svg>
+      </a>
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current">
+          <path
+            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+        </svg>
+      </a>
+    </div>
+  </nav>
+</footer>
+
 
 </body>
 </html>
